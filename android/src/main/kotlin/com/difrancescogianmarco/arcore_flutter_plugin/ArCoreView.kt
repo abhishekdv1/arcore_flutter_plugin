@@ -552,7 +552,7 @@ class ArCoreView(val activity: Activity, context: Context, messenger: BinaryMess
                 }
             } catch (ex: UnavailableUserDeclinedInstallationException) {
                 // Display an appropriate message to the user zand return gracefully.
-                Toast.makeText(activity, "TODO: handle exception " + ex.localizedMessage, Toast.LENGTH_LONG)
+                Toast.makeText(activity, "TODO: handle exception " + ex, Toast.LENGTH_LONG)
                         .show();
                 return
             } catch (e: UnavailableException) {
